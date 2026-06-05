@@ -1,0 +1,6 @@
+{
+  "name": "TSHEETSANO CBO & Enterprise",
+  "description": "Welcome to TSHEETSANO Community Based Organization & Enterprise. Reaching People. Changing Lives. Dedicated to fighting hunger, poverty, and unemployment through food security, organic medicinal plant cultivation, skills development, and job creation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

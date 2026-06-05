@@ -1,0 +1,1687 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TSHEETSANO | Food Security & Traditional healing | Free State</title>
+    <!-- Google Fonts Inter & Playfair Display -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Global Compiled style sheet with Tailwind variables imports -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="min-h-screen bg-white text-gray-900 overflow-x-hidden antialiased select-none">
+    
+    <!-- Sticky Navigation Header -->
+    <header
+      id="navbar-header"
+      class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-gradient-to-b from-black/60 to-transparent py-5 text-white"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between">
+          <!-- Logo Brand Link -->
+          <a
+            href="#home"
+            class="flex items-center space-x-2.5 group"
+            id="nav-logo-link"
+          >
+            <div class="w-10 h-10 rounded-full overflow-hidden bg-white/10 flex items-center justify-center shadow-md transition-transform duration-300 group-hover:scale-105">
+              <img
+                src="src/assets/images/tsheetsano_logo_1780661484232.png"
+                alt="TSHEETSANO Logo"
+                class="w-full h-full object-cover"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <div class="flex flex-col text-left">
+              <span class="font-serif font-bold text-lg leading-tight tracking-wide group-hover:text-brand-gold transition-colors duration-200">
+                TSHEETSANO
+              </span>
+              <span class="text-[10px] tracking-wider uppercase opacity-85 font-sans font-medium">
+                CBO & Enterprise
+              </span>
+            </div>
+          </a>
+
+          <!-- Desktop Navigation Menu Row -->
+          <nav class="hidden md:flex items-center space-x-8" id="desktop-nav-menu">
+            <a href="#home" class="relative py-2 text-sm font-medium tracking-wide uppercase transition-colors duration-200 text-brand-gold">
+              Home
+              <span class="active-underline-marker absolute bottom-0 left-0 w-full h-0.5 bg-brand-gold rounded-full"></span>
+            </a>
+            <a href="#about" class="relative py-2 text-sm font-medium tracking-wide uppercase transition-colors duration-200 text-white/90 hover:text-brand-gold">About</a>
+            <a href="#products" class="relative py-2 text-sm font-medium tracking-wide uppercase transition-colors duration-200 text-white/90 hover:text-brand-gold">Products</a>
+            <a href="#services" class="relative py-2 text-sm font-medium tracking-wide uppercase transition-colors duration-200 text-white/90 hover:text-brand-gold">Services</a>
+            <a href="#gallery" class="relative py-2 text-sm font-medium tracking-wide uppercase transition-colors duration-200 text-white/90 hover:text-brand-gold">Gallery</a>
+            <a href="#contact" class="relative py-2 text-sm font-medium tracking-wide uppercase transition-colors duration-200 text-white/90 hover:text-brand-gold">Contact</a>
+
+            <!-- Call CTA Header Trigger -->
+            <a
+              href="tel:0836980596"
+              class="bg-brand-gold text-brand-dark-green hover:bg-white hover:text-brand-dark-green font-semibold text-xs py-2.5 px-4.5 rounded-full flex items-center gap-1.5 transition-all duration-300 shadow-md uppercase tracking-wider"
+              id="nav-cta-button"
+            >
+              <i class="fa-solid fa-phone text-xs"></i>
+              <span>Call Us</span>
+            </a>
+          </nav>
+
+          <!-- Mobile Toggle Trigger Button -->
+          <div class="md:hidden flex items-center">
+            <button
+              id="mobile-menu-toggle-btn"
+              class="p-2 rounded-lg text-white/90 hover:text-brand-gold focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 focus:ring-offset-brand-dark-green"
+              aria-label="Toggle navigation menu"
+            >
+              <i class="fa-solid fa-bars w-6 h-6 flex items-center justify-center text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Navbar Panel Drawer (Controlled by script.js) -->
+      <div
+        id="mobile-nav-panel"
+        class="hidden md:hidden bg-brand-dark-green border-t border-brand-green/20"
+      >
+        <div class="px-4 pt-3 pb-6 space-y-2 text-left">
+          <a href="#home" class="block px-3 py-2.5 rounded-md text-base font-medium text-white/80 hover:bg-brand-green/40 hover:text-white">Home</a>
+          <a href="#about" class="block px-3 py-2.5 rounded-md text-base font-medium text-white/80 hover:bg-brand-green/40 hover:text-white">About</a>
+          <a href="#products" class="block px-3 py-2.5 rounded-md text-base font-medium text-white/80 hover:bg-brand-green/40 hover:text-white">Products</a>
+          <a href="#services" class="block px-3 py-2.5 rounded-md text-base font-medium text-white/80 hover:bg-brand-green/40 hover:text-white">Services</a>
+          <a href="#gallery" class="block px-3 py-2.5 rounded-md text-base font-medium text-white/80 hover:bg-brand-green/40 hover:text-white">Gallery</a>
+          <a href="#contact" class="block px-3 py-2.5 rounded-md text-base font-medium text-white/80 hover:bg-brand-green/40 hover:text-white">Contact</a>
+          <div class="pt-4 border-t border-brand-green/20">
+            <a
+              href="tel:0836980596"
+              class="flex items-center justify-center gap-2 w-full bg-brand-gold text-brand-dark-green font-bold py-3 rounded-md shadow-md uppercase tracking-wide text-xs"
+            >
+              <i class="fa-solid fa-phone"></i>
+              <span>Call 083 698 0596</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="app-sections-container">
+      
+      <!-- Home Hero Section with multi background and widgets -->
+      <section id="home" class="relative pt-20 overflow-hidden bg-brand-dark-green">
+        <div class="absolute inset-0 z-0">
+          <img
+            src="src/assets/images/tsheetsano_hero_1780660950381.png"
+            alt="TSHEETSANO Community Farming & Organic Crops"
+            class="w-full h-full object-cover object-center opacity-35"
+            referrerpolicy="no-referrer"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-dark-green via-brand-dark-green/60 to-black/80"></div>
+          <div class="absolute inset-0 bg-gradient-to-r from-brand-dark-green/90 via-transparent to-black/40"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 md:pt-28 md:pb-32 flex flex-col items-center">
+          <div class="max-w-4xl text-center">
+            <div class="inline-flex items-center space-x-2 bg-brand-gold/15 border border-brand-gold/35 px-4.5 py-1.5 rounded-full mb-6">
+              <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+              <span class="text-brand-gold font-sans font-bold text-xs uppercase tracking-widest">
+                Reaching People. Changing Lives.
+              </span>
+            </div>
+
+            <h1 class="font-serif text-4xl sm:text-5xl md:text-6.5xl font-black text-white tracking-tight leading-[1.1] mb-6" id="main-heading">
+              Welcome to <span class="text-brand-gold">TSHEETSANO</span> Community Based Organization & Enterprise
+            </h1>
+
+            <p class="font-sans text-base sm:text-lg md:text-xl text-brand-light-gray/90 leading-relaxed max-w-3xl mx-auto mb-10" id="main-description">
+              We are dedicated to fighting hunger, poverty, and unemployment in South Africa through food security, organic medicinal plant cultivation, skills development, and job creation initiatives.
+            </p>
+
+            <!-- Hero Action click buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20" id="hero-actions">
+              <a
+                href="#about"
+                class="group flex items-center justify-center gap-2 w-full sm:w-auto bg-brand-gold hover:bg-white text-brand-dark-green font-bold text-sm uppercase tracking-wider py-4 px-8 rounded-full border-2 border-brand-gold hover:border-white transition-all duration-300 shadow-xl"
+                id="hero-btn-learn-more"
+              >
+                Learn More
+                <i class="fa-solid fa-arrow-right transition-transform duration-200 group-hover:translate-x-1"></i>
+              </a>
+              <a
+                href="#contact"
+                class="flex items-center justify-center gap-2 w-full sm:w-auto bg-transparent hover:bg-white/10 text-white font-bold text-sm uppercase tracking-wider py-4 px-8 rounded-full border-2 border-white transition-all duration-300 shadow-md"
+                id="hero-btn-contact-us"
+              >
+                Contact Us
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Live counter stats panel (Dynamic animations in script) -->
+          <div class="w-full max-w-5xl bg-white/5 backdrop-blur-md rounded-3xl border border-white/10 p-6 sm:p-8 md:p-10 shadow-2xl mb-20" id="stats-block">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10 text-center">
+              <div class="flex flex-col items-center">
+                <div class="mb-2">
+                  <span class="stat-count-element font-serif font-black text-4xl sm:text-5xl text-brand-gold tracking-tight" data-target-value="20" data-suffix="+">0+</span>
+                </div>
+                <div class="text-white/80 font-sans text-xs sm:text-xs.5 uppercase font-medium tracking-wider max-w-[150px]">
+                  Years of Healing Experience
+                </div>
+              </div>
+
+              <div class="flex flex-col items-center">
+                <div class="mb-2">
+                  <span class="stat-count-element font-serif font-black text-4xl sm:text-5xl text-brand-gold tracking-tight" data-target-value="150" data-suffix="+">0+</span>
+                </div>
+                <div class="text-white/80 font-sans text-xs sm:text-xs.5 uppercase font-medium tracking-wider max-w-[150px]">
+                  Jobs & Livelihoods Created
+                </div>
+              </div>
+
+              <div class="flex flex-col items-center">
+                <div class="mb-2">
+                  <span class="stat-count-element font-serif font-black text-4xl sm:text-5xl text-brand-gold tracking-tight" data-target-value="12" data-suffix="">0</span>
+                </div>
+                <div class="text-white/80 font-sans text-xs sm:text-xs.5 uppercase font-medium tracking-wider max-w-[150px]">
+                  Active Community Gardens
+                </div>
+              </div>
+
+              <div class="flex flex-col items-center">
+                <div class="mb-2">
+                  <span class="stat-count-element font-serif font-black text-4xl sm:text-5xl text-brand-gold tracking-tight" data-target-value="4500" data-suffix="+">0+</span>
+                </div>
+                <div class="text-white/80 font-sans text-xs sm:text-xs.5 uppercase font-medium tracking-wider max-w-[150px]">
+                  Beneficiaries Empowered
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row cards describing Botshabelo programs -->
+          <div class="w-full max-w-6xl">
+            <div class="text-center mb-8">
+              <h3 class="font-serif font-black text-white text-xl sm:text-2xl mt-4">
+                Pioneering Community Projects
+              </h3>
+              <div class="w-16 h-1 bg-brand-gold mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="project-cards-row">
+              <!-- Sustainable Crops -->
+              <div class="fade-in-section bg-brand-dark-green/45 rounded-2xl overflow-hidden shadow-xl border border-white/10 group cursor-pointer text-left">
+                <div class="relative h-48 overflow-hidden">
+                  <img
+                    src="src/assets/images/community_gardens_1780660981486.png"
+                    alt="Sustainable Crops"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    referrerpolicy="no-referrer"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                  <div class="absolute bottom-4 left-4 flex items-center space-x-2">
+                    <span class="p-1.5 rounded-full bg-brand-gold text-brand-dark-green flex items-center justify-center w-7 h-7">
+                      <i class="fa-solid fa-shield-halved text-xs"></i>
+                    </span>
+                    <span class="font-serif font-bold text-white text-base">
+                      Sustainable Crops
+                    </span>
+                  </div>
+                </div>
+                <div class="p-5">
+                  <p class="text-brand-light-gray/80 text-xs sm:text-sm leading-relaxed">
+                    Fresh, healthy food production programs fostering nutrition self-sufficiency.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Medicinal Cultivation -->
+              <div class="fade-in-section bg-brand-dark-green/45 rounded-2xl overflow-hidden shadow-xl border border-white/10 group cursor-pointer text-left">
+                <div class="relative h-48 overflow-hidden">
+                  <img
+                    src="src/assets/images/medicinal_plants_1780660999130.png"
+                    alt="Medicinal Cultivation"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    referrerpolicy="no-referrer"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                  <div class="absolute bottom-4 left-4 flex items-center space-x-2">
+                    <span class="p-1.5 rounded-full bg-brand-gold text-brand-dark-green flex items-center justify-center w-7 h-7">
+                      <i class="fa-solid fa-seedling text-xs"></i>
+                    </span>
+                    <span class="font-serif font-bold text-white text-base">
+                      Medicinal Cultivation
+                    </span>
+                  </div>
+                </div>
+                <div class="p-5">
+                  <p class="text-brand-light-gray/80 text-xs sm:text-sm leading-relaxed">
+                    Preserving and growing high-potency organic traditional African herbs.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Agro Skills Training -->
+              <div class="fade-in-section bg-brand-dark-green/45 rounded-2xl overflow-hidden shadow-xl border border-white/10 group cursor-pointer text-left">
+                <div class="relative h-48 overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&w=400&q=80"
+                    alt="Agro-Skills Training"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    referrerpolicy="no-referrer"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                  <div class="absolute bottom-4 left-4 flex items-center space-x-2">
+                    <span class="p-1.5 rounded-full bg-brand-gold text-brand-dark-green flex items-center justify-center w-7 h-7">
+                      <i class="fa-solid fa-users text-xs"></i>
+                    </span>
+                    <span class="font-serif font-bold text-white text-base">
+                      Agro-Skills Training
+                    </span>
+                  </div>
+                </div>
+                <div class="p-5">
+                  <p class="text-brand-light-gray/80 text-xs sm:text-sm leading-relaxed">
+                    Equipping local youth and families with modern agricultural capabilities.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section detailing Dr. Tefo and Org profile -->
+      <section id="about" class="hidden py-20 bg-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-64 -mt-64 w-128 h-128 rounded-full bg-brand-light-gray/60 -z-10"></div>
+        <div class="absolute bottom-0 left-0 -ml-64 -mb-64 w-128 h-128 rounded-full bg-brand-green/5 -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <!-- Heading Profile Split Row: Doctor Tefo Makutsoane landscape view -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-24">
+            
+            <!-- Dr. Tefo portrait card -->
+            <div class="lg:col-span-5 relative">
+              <div
+                class="fade-in-section relative rounded-3xl overflow-hidden shadow-2xl border-4 border-brand-green/10"
+                id="dr-tefo-image-container"
+              >
+                <img
+                  src="src/assets/images/dr_tefo_makutsoane_1780660966137.png"
+                  alt="Dr. Doctor Tefo Makutsoane - Traditional African Healer & Spiritual Counselor"
+                  class="w-full aspect-[3/4] object-cover transition-transform duration-700 hover:scale-[1.03]"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brand-dark-green/90 via-brand-dark-green/30 to-transparent p-6 text-white text-center">
+                  <span class="font-serif italic text-brand-gold text-lg block font-semibold">
+                    Dr. Doctor Tefo Makutsoane
+                  </span>
+                  <span class="text-xs uppercase tracking-widest text-white/80 font-semibold mt-1 block">
+                    CBO Director & Lead Traditional Healer
+                  </span>
+                </div>
+              </div>
+
+              <!-- Traditional healing lineage stamp -->
+              <div class="absolute -top-5 -right-5 w-24 h-24 rounded-full bg-brand-gold flex flex-col items-center justify-center p-2 text-center shadow-lg border-2 border-white rotate-12 z-20">
+                <i class="fa-solid fa-award text-brand-dark-green text-xl mb-0.5"></i>
+                <span class="text-[10px] text-brand-dark-green font-black leading-none uppercase">
+                  20+ Years
+                </span>
+                <span class="text-[8px] text-brand-dark-green opacity-90 uppercase mt-0.5">
+                  Experience
+                </span>
+              </div>
+            </div>
+
+            <!-- Profile Narrative Block -->
+            <div class="lg:col-span-7 text-left font-sans" id="dr-tefo-bio-text">
+              <div class="flex items-center space-x-2 text-brand-green mb-3">
+                <i class="fa-solid fa-heart text-brand-gold"></i>
+                <span class="text-xs font-bold uppercase tracking-wider font-sans">
+                  Traditional African Medicine & Counsel
+                </span>
+              </div>
+
+              <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-brand-dark-green leading-tight tracking-tight mb-6">
+                Traditional Healing & Spiritual Guidance
+              </h2>
+
+              <p class="text-base text-gray-700 leading-relaxed mb-6">
+                "With over 20 years of experience in traditional healing, <strong class="text-brand-dark-green font-semibold">Dr. Tefo</strong> combines ancient wisdom with modern understanding to provide holistic solutions for physical, emotional, and spiritual well-being. Specializing in traditional African medicine, spiritual counseling, and natural remedies, Dr. Tefo has helped countless individuals restore balance and harmony in their lives."
+              </p>
+
+              <div class="border-t-2 border-dashed border-gray-100 pt-6 mt-6">
+                <h3 class="font-serif font-black text-brand-dark-green text-xl mb-3">
+                  Organization Overview
+                </h3>
+                <p class="text-sm.5 text-gray-600 leading-relaxed mb-4">
+                  TSHEETSANO Community Based Organization & Enterprise is a community-driven organization dedicated to transforming lives affected by hunger, poverty, and unemployment through sustainable food security initiatives and organic medicinal plant development.
+                </p>
+                <p class="text-sm.5 text-gray-600 leading-relaxed">
+                  The organization works closely with communities to empower individuals and families by providing agricultural training, promoting food production, supporting medicinal plant cultivation, and creating economic opportunities that improve livelihoods.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mission & Vision Solid border grids -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24 text-left font-sans" id="mission-vision-row">
+            <!-- Mission Card -->
+            <div class="fade-in-section bg-brand-light-gray rounded-3xl p-8 sm:p-10 shadow-md border-l-8 border-brand-green relative group overflow-hidden">
+              <div class="absolute top-4 right-4 text-brand-green/10 transition-transform duration-300 group-hover:scale-110">
+                <i class="fa-solid fa-bullseye text-6xl"></i>
+              </div>
+              <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-brand-green shadow-sm mb-5">
+                <i class="fa-solid fa-bullseye text-lg text-brand-dark-green"></i>
+              </div>
+              <h3 class="font-serif text-2xl font-bold text-brand-dark-green mb-4">
+                Mission
+              </h3>
+              <p class="text-gray-700 leading-relaxed text-sm.5">
+                "To change lives affected by hunger, poverty, and unemployment through food security, organic medicinal plant cultivation, skills development, and sustainable community empowerment programs."
+              </p>
+            </div>
+
+            <!-- Vision Card -->
+            <div class="fade-in-section bg-brand-light-gray rounded-3xl p-8 sm:p-10 shadow-md border-l-8 border-brand-gold relative group overflow-hidden">
+              <div class="absolute top-4 right-4 text-brand-gold/10 transition-transform duration-300 group-hover:scale-110">
+                <i class="fa-solid fa-lightbulb text-6xl"></i>
+              </div>
+              <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-brand-gold shadow-sm mb-5">
+                <i class="fa-solid fa-lightbulb text-lg text-brand-gold"></i>
+              </div>
+              <h3 class="font-serif text-2xl font-bold text-brand-dark-green mb-4">
+                Vision
+              </h3>
+              <p class="text-gray-700 leading-relaxed text-sm.5">
+                "To reach people and transform communities by creating opportunities for sustainable livelihoods, improved well-being, and economic growth through agriculture and medicinal plant development."
+              </p>
+            </div>
+          </div>
+
+          <!-- Secondary Focused Projects Cards row -->
+          <div class="mb-24">
+            <div class="text-center mb-10">
+              <h3 class="font-serif text-3xl font-black text-brand-dark-green tracking-tight">
+                Our Focused Projects & Operations
+              </h3>
+              <p class="text-gray-500 font-sans text-sm mt-2 max-w-xl mx-auto">
+                Cultivating agricultural solutions and traditional practices to empower regional South African towns.
+              </p>
+              <div class="w-12 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left font-sans" id="about-focused-projects">
+              <!-- Communal Gardens -->
+              <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 group flex flex-col">
+                <div class="h-44 overflow-hidden relative">
+                  <img
+                    src="src/assets/images/community_gardens_1780660981486.png"
+                    alt="Community Gardens"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    referrerpolicy="no-referrer"
+                  />
+                  <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-all duration-305"></div>
+                </div>
+                <div class="p-5 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h4 class="font-serif font-black text-brand-dark-green text-base mb-2 group-hover:text-brand-green transition-colors duration-200">
+                      Community Gardens
+                    </h4>
+                    <p class="text-gray-600 text-[13px] leading-relaxed">
+                      Developing local soil networks to secure fresh food daily.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Medicinal Nursery -->
+              <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 group flex flex-col">
+                <div class="h-44 overflow-hidden relative">
+                  <img
+                    src="src/assets/images/medicinal_plants_1780660999130.png"
+                    alt="Medicinal Plant Cultivation"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    referrerpolicy="no-referrer"
+                  />
+                  <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-all duration-350"></div>
+                </div>
+                <div class="p-5 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h4 class="font-serif font-black text-brand-dark-green text-base mb-2 group-hover:text-brand-green transition-colors duration-200">
+                      Medicinal Plant Cultivation
+                    </h4>
+                    <p class="text-gray-600 text-[13px] leading-relaxed">
+                      Preserving and producing vital, indigenous healing remedies organically.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Agricultural Training -->
+              <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 group flex flex-col">
+                <div class="h-44 overflow-hidden relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&w=600&q=80"
+                    alt="Agricultural Training"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    referrerpolicy="no-referrer"
+                  />
+                  <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-all duration-350"></div>
+                </div>
+                <div class="p-5 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h4 class="font-serif font-black text-brand-dark-green text-base mb-2 group-hover:text-brand-green transition-colors duration-200">
+                      Agricultural Training
+                    </h4>
+                    <p class="text-gray-600 text-[13px] leading-relaxed">
+                      Equipping households with climate-smart gardening techniques.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Community Empowerment -->
+              <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 group flex flex-col">
+                <div class="h-44 overflow-hidden relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80"
+                    alt="Community Empowerment"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    referrerpolicy="no-referrer"
+                  />
+                  <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-all duration-350"></div>
+                </div>
+                <div class="p-5 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h4 class="font-serif font-black text-brand-dark-green text-base mb-2 group-hover:text-brand-green transition-colors duration-200">
+                      Community Empowerment
+                    </h4>
+                    <p class="text-gray-600 text-[13px] leading-relaxed">
+                      Providing employment and fostering self-reliance for vulnerable groups.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Strategic organization objectives bullet sheet list -->
+          <div class="bg-brand-dark-green text-white rounded-3xl p-8 sm:p-12 shadow-xl relative overflow-hidden text-left" id="core-objectives-block">
+            <div class="absolute top-0 right-0 p-8 opacity-5">
+              <i class="fa-solid fa-seedling text-9xl"></i>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+              <div class="lg:col-span-4">
+                <span class="text-brand-gold uppercase tracking-wider font-bold text-xs font-sans">
+                  Key Strategic Action
+                </span>
+                <h3 class="font-serif text-3xl sm:text-4.5xl font-black text-white leading-tight mt-2 mb-4">
+                  Our Core Objectives
+                </h3>
+                <p class="font-sans text-white/80 text-sm leading-relaxed mb-6">
+                  Through targeted programs, we create actionable solutions to fight local unemployment and foster true community self-reliance.
+                </p>
+                <div class="inline-block bg-white/10 px-5 py-3 rounded-xl border border-white/10">
+                  <span class="text-brand-gold font-serif font-black italic text-lg select-none block">
+                    "Reaching People, Changing Lives."
+                  </span>
+                  <span class="text-[10px] text-white/70 font-semibold block uppercase tracking-widest mt-1 font-sans">
+                    OUR ORGANIZATIONAL MOTTO
+                  </span>
+                </div>
+              </div>
+
+              <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-4 font-sans">
+                <div class="bg-white/5 border border-white/10 hover:border-brand-gold/30 rounded-xl p-4 flex items-start space-x-3 transition-colors duration-300">
+                  <i class="fa-solid fa-circle-check text-brand-gold mt-1"></i>
+                  <span class="text-white/90 text-xs sm:text-sm leading-relaxed">
+                    Promote food security through community gardens and agricultural projects.
+                  </span>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 hover:border-brand-gold/30 rounded-xl p-4 flex items-start space-x-3 transition-colors duration-300">
+                  <i class="fa-solid fa-circle-check text-brand-gold mt-1"></i>
+                  <span class="text-white/90 text-xs sm:text-sm leading-relaxed">
+                    Develop and cultivate organic medicinal plants for health and economic benefits.
+                  </span>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 hover:border-brand-gold/30 rounded-xl p-4 flex items-start space-x-3 transition-colors duration-300">
+                  <i class="fa-solid fa-circle-check text-brand-gold mt-1"></i>
+                  <span class="text-white/90 text-xs sm:text-sm leading-relaxed">
+                    Create employment and income-generating opportunities.
+                  </span>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 hover:border-brand-gold/30 rounded-xl p-4 flex items-start space-x-3 transition-colors duration-300">
+                  <i class="fa-solid fa-circle-check text-brand-gold mt-1"></i>
+                  <span class="text-white/90 text-xs sm:text-sm leading-relaxed">
+                    Provide training and skills development programs.
+                  </span>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 hover:border-brand-gold/30 rounded-xl p-4 flex items-start space-x-3 transition-colors duration-300">
+                  <i class="fa-solid fa-circle-check text-brand-gold mt-1"></i>
+                  <span class="text-white/90 text-xs sm:text-sm leading-relaxed">
+                    Empower vulnerable groups, including youth, women, and unemployed individuals.
+                  </span>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 hover:border-brand-gold/30 rounded-xl p-4 flex items-start space-x-3 transition-colors duration-300">
+                  <i class="fa-solid fa-circle-check text-brand-gold mt-1"></i>
+                  <span class="text-white/90 text-xs sm:text-sm leading-relaxed">
+                    Support sustainable community development and self-reliance.
+                  </span>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 hover:border-brand-gold/30 rounded-xl p-4 flex items-start space-x-3 transition-colors duration-300">
+                  <i class="fa-solid fa-circle-check text-brand-gold mt-1"></i>
+                  <span class="text-white/90 text-xs sm:text-sm leading-relaxed">
+                    Improve the quality of life for disadvantaged communities.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products catalog section with details modal triggers -->
+      <section id="products" class="hidden py-20 bg-brand-light-gray relative overflow-hidden">
+        <div class="absolute top-1/2 left-0 w-32 h-64 bg-brand-green/5 blur-3xl -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <span class="text-brand-green font-bold text-xs uppercase tracking-widest bg-brand-green/10 px-3.5 py-1 rounded-full inline-block font-sans">
+              Our Offerings
+            </span>
+            <h2 class="font-serif text-3xl sm:text-4.5xl font-black text-brand-dark-green tracking-tight mt-3">
+              Organic & Traditional Products
+            </h2>
+            <p class="font-sans text-gray-500 max-w-2xl mx-auto text-sm sm:text-base mt-3 leading-relaxed">
+              Every purchase directly supports our community gardens, funding job creation and food security programs for local South African families.
+            </p>
+            <div class="w-16 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+          </div>
+
+          <!-- Grid row of six products -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left font-sans" id="products-cards-grid">
+            <!-- Organic Medicinal Plants -->
+            <div class="fade-in-section bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl border border-gray-100 group flex flex-col justify-between transition-shadow duration-300">
+              <div class="relative h-60 overflow-hidden">
+                <img src="src/assets/images/medicinal_plants_1780660999130.png" alt="Organic Medicinal Plants" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div class="absolute top-4 left-4 bg-brand-dark-green text-brand-gold text-[10px] font-black uppercase tracking-wider py-1 px-3 rounded-full shadow-md border border-brand-gold/20">
+                  Premium Quality
+                </div>
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 class="font-serif font-black text-brand-dark-green text-lg.5 leading-snug mb-2 group-hover:text-brand-green transition-colors duration-200">
+                    Organic Medicinal Plants
+                  </h3>
+                  <p class="text-gray-600 text-sm leading-relaxed line-clamp-3 mb-5">
+                    Carefully wildcrafted and organically grown local flora including Artemisia, Sutherlandia (Cancer Bush), and African Potato, preserved for purity and high therapeutic efficacy.
+                  </p>
+                </div>
+                <button
+                  id="learn-more-btn-prod1"
+                  data-product-id="prod1"
+                  class="w-full py-3 bg-brand-light-gray hover:bg-brand-dark-green text-brand-dark-green hover:text-white font-bold text-xs uppercase tracking-wider rounded-xl flex items-center justify-center gap-1.5 transition-all duration-300 border border-gray-200/60"
+                >
+                  <span>Learn More</span>
+                  <i class="fa-solid fa-chevron-right text-xs"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Herbal Remedies -->
+            <div class="fade-in-section bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl border border-gray-100 group flex flex-col justify-between transition-shadow duration-300">
+              <div class="relative h-60 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Herbal Remedies" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div class="absolute top-4 left-4 bg-brand-dark-green text-brand-gold text-[10px] font-black uppercase tracking-wider py-1 px-3 rounded-full shadow-md border border-brand-gold/20">
+                  Authentic Traditional
+                </div>
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 class="font-serif font-black text-brand-dark-green text-lg.5 leading-snug mb-2 group-hover:text-brand-green transition-colors duration-200">
+                    Herbal Remedies
+                  </h3>
+                  <p class="text-gray-600 text-sm leading-relaxed line-clamp-3 mb-5">
+                    Traditionally prepared organic herbal infusions, concentrated teas, and plant-based mixtures formulated by Dr. Tefo to restore physical wellness and systemic vitality.
+                  </p>
+                </div>
+                <button
+                  id="learn-more-btn-prod2"
+                  data-product-id="prod2"
+                  class="w-full py-3 bg-brand-light-gray hover:bg-brand-dark-green text-brand-dark-green hover:text-white font-bold text-xs uppercase tracking-wider rounded-xl flex items-center justify-center gap-1.5 transition-all duration-300 border border-gray-200/60"
+                >
+                  <span>Learn More</span>
+                  <i class="fa-solid fa-chevron-right text-xs"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Organic Agricultural Produce -->
+            <div class="fade-in-section bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl border border-gray-100 group flex flex-col justify-between transition-shadow duration-300">
+              <div class="relative h-60 overflow-hidden">
+                <img src="src/assets/images/community_gardens_1780660981486.png" alt="Organic Agricultural Produce" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div class="absolute top-4 left-4 bg-brand-dark-green text-brand-gold text-[10px] font-black uppercase tracking-wider py-1 px-3 rounded-full shadow-md border border-brand-gold/20">
+                  100% Organic
+                </div>
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 class="font-serif font-black text-brand-dark-green text-lg.5 leading-snug mb-2 group-hover:text-brand-green transition-colors duration-200">
+                    Organic Agricultural Produce
+                  </h3>
+                  <p class="text-gray-600 text-sm leading-relaxed line-clamp-3 mb-5">
+                    Nutritious, chemical-free greens, spinach, carrots, and sweet potatoes freshly harvested daily from our sustainable crop development gardens in Botshabelo.
+                  </p>
+                </div>
+                <button
+                  id="learn-more-btn-prod3"
+                  data-product-id="prod3"
+                  class="w-full py-3 bg-brand-light-gray hover:bg-brand-dark-green text-brand-dark-green hover:text-white font-bold text-xs uppercase tracking-wider rounded-xl flex items-center justify-center gap-1.5 transition-all duration-300 border border-gray-200/60"
+                >
+                  <span>Learn More</span>
+                  <i class="fa-solid fa-chevron-right text-xs"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Seedlings and Plant Materials -->
+            <div class="fade-in-section bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl border border-gray-100 group flex flex-col justify-between transition-shadow duration-300">
+              <div class="relative h-60 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=80" alt="Seedlings and Plant Materials" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div class="absolute top-4 left-4 bg-brand-dark-green text-brand-gold text-[10px] font-black uppercase tracking-wider py-1 px-3 rounded-full shadow-md border border-brand-gold/20">
+                  Nursery Stock
+                </div>
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 class="font-serif font-black text-brand-dark-green text-lg.5 leading-snug mb-2 group-hover:text-brand-green transition-colors duration-200">
+                    Seedlings and Plant Materials
+                  </h3>
+                  <p class="text-gray-600 text-sm leading-relaxed line-clamp-3 mb-5">
+                    Vigorous seedlings of both essential vegetables and key African medicinal herbs developed in our community nursery to start your own sustainable home gardens.
+                  </p>
+                </div>
+                <button
+                  id="learn-more-btn-prod4"
+                  data-product-id="prod4"
+                  class="w-full py-3 bg-brand-light-gray hover:bg-brand-dark-green text-brand-dark-green hover:text-white font-bold text-xs uppercase tracking-wider rounded-xl flex items-center justify-center gap-1.5 transition-all duration-300 border border-gray-200/60"
+                >
+                  <span>Learn More</span>
+                  <i class="fa-solid fa-chevron-right text-xs"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Traditional Health Products -->
+            <div class="fade-in-section bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl border border-gray-100 group flex flex-col justify-between transition-shadow duration-300">
+              <div class="relative h-60 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80" alt="Traditional Health Products" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div class="absolute top-4 left-4 bg-brand-dark-green text-brand-gold text-[10px] font-black uppercase tracking-wider py-1 px-3 rounded-full shadow-md border border-brand-gold/20">
+                  Wellness & Care
+                </div>
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 class="font-serif font-black text-brand-dark-green text-lg.5 leading-snug mb-2 group-hover:text-brand-green transition-colors duration-200">
+                    Traditional Health Products
+                  </h3>
+                  <p class="text-gray-600 text-sm leading-relaxed line-clamp-3 mb-5">
+                    Ancestrally blessed and carefully processed natural tonics and skin balms crafted using cold-pressed oils and local aromatic herbs.
+                  </p>
+                </div>
+                <button
+                  id="learn-more-btn-prod5"
+                  data-product-id="prod5"
+                  class="w-full py-3 bg-brand-light-gray hover:bg-brand-dark-green text-brand-dark-green hover:text-white font-bold text-xs uppercase tracking-wider rounded-xl flex items-center justify-center gap-1.5 transition-all duration-300 border border-gray-200/60"
+                >
+                  <span>Learn More</span>
+                  <i class="fa-solid fa-chevron-right text-xs"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Community Garden Produce -->
+            <div class="fade-in-section bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl border border-gray-100 group flex flex-col justify-between transition-shadow duration-300">
+              <div class="relative h-60 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=600&q=80" alt="Community Garden Produce" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div class="absolute top-4 left-4 bg-brand-dark-green text-brand-gold text-[10px] font-black uppercase tracking-wider py-1 px-3 rounded-full shadow-md border border-brand-gold/20">
+                  Community Grown
+                </div>
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 class="font-serif font-black text-brand-dark-green text-lg.5 leading-snug mb-2 group-hover:text-brand-green transition-colors duration-200">
+                    Community Garden Produce
+                  </h3>
+                  <p class="text-gray-600 text-sm leading-relaxed line-clamp-3 mb-5">
+                    High-yield seasonal basket assortments sourced from our cooperative network, designed to provide food security and fresh nutrition directly to local families.
+                  </p>
+                </div>
+                <button
+                  id="learn-more-btn-prod6"
+                  data-product-id="prod6"
+                  class="w-full py-3 bg-brand-light-gray hover:bg-brand-dark-green text-brand-dark-green hover:text-white font-bold text-xs uppercase tracking-wider rounded-xl flex items-center justify-center gap-1.5 transition-all duration-300 border border-gray-200/60"
+                >
+                  <span>Learn More</span>
+                  <i class="fa-solid fa-chevron-right text-xs"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wholesale Bulk program callout -->
+          <div class="mt-16 bg-white rounded-2xl p-6 shadow-md border border-gray-200/50 flex flex-col md:flex-row items-center justify-between gap-6 max-w-4xl mx-auto text-left">
+            <div class="flex items-center space-x-3.5">
+              <div class="w-12 h-12 bg-brand-gold/15 rounded-xl flex items-center justify-center text-brand-gold shrink-0">
+                <i class="fa-solid fa-bag-shopping text-brand-dark-green text-xl"></i>
+              </div>
+              <div>
+                <h4 class="font-serif font-bold text-brand-dark-green text-base">
+                  Looking to order in bulk or setup a corporate support account?
+                </h4>
+                <p class="text-gray-500 font-sans text-xs sm:text-sm mt-0.5">
+                  We handle wholesale seedling distributions and fresh garden baskets for hospitality and retail clients.
+                </p>
+              </div>
+            </div>
+            <a
+              href="tel:0836980596"
+              class="w-full md:w-auto bg-brand-dark-green hover:bg-brand-green text-white font-bold text-xs uppercase tracking-widest py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 transition-all duration-200"
+            >
+              <i class="fa-solid fa-phone text-brand-gold text-xs"></i>
+              <span>Call to Inquire</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Detail popup modal container framework (Controlled by script.js) -->
+        <div
+          id="product-modal-root"
+          class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6"
+        >
+          <!-- Backdrop overlay shadow -->
+          <div class="fixed inset-0 bg-black/60 backdrop-blur-sm"></div>
+
+          <!-- Dialog Box -->
+          <div class="relative w-full max-w-2xl bg-white rounded-3xl overflow-hidden shadow-2xl z-10 max-h-[90vh] flex flex-col text-left">
+            <!-- Modal Head Image banner -->
+            <div class="relative h-48 sm:h-64 shrink-0">
+              <img id="modal-img" src="" alt="" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+              
+              <!-- Close action trigger -->
+              <button
+                id="product-modal-close-btn"
+                class="absolute top-4 right-4 p-2.5 bg-black/50 hover:bg-white text-white hover:text-brand-dark-green rounded-full backdrop-blur-md transition-colors flex items-center justify-center w-10 h-10"
+                aria-label="Close details"
+              >
+                <i class="fa-solid fa-xmark text-lg"></i>
+              </button>
+
+              <!-- Image text header overlay -->
+              <div class="absolute bottom-6 left-6 right-6 text-white font-sans">
+                <span id="modal-tag" class="text-brand-gold text-[10px] uppercase font-serif tracking-widest font-black bg-brand-dark-green/65 py-1 px-3 rounded-full border border-brand-gold/30"></span>
+                <h3 id="modal-title" class="font-serif font-black text-xl sm:text-2xl mt-2 text-white"></h3>
+              </div>
+            </div>
+
+            <!-- Scrollable Information content -->
+            <div class="p-6 sm:p-8 overflow-y-auto space-y-6 scrollbar">
+              <div>
+                <h4 class="font-serif font-black text-brand-dark-green text-sm.5 uppercase tracking-wider mb-2">
+                  Scope & Description
+                </h4>
+                <p id="modal-description" class="font-sans text-gray-650 text-sm leading-relaxed"></p>
+              </div>
+
+              <!-- Guidelines checklists -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4 border-t border-gray-100 font-sans">
+                <div>
+                  <h5 class="font-serif font-black text-brand-dark-green text-sm uppercase tracking-wide flex items-center gap-1.5 mb-3">
+                    <i class="fa-solid fa-heart text-brand-gold"></i>
+                    <span>Natural Benefits</span>
+                  </h5>
+                  <ul id="modal-benefits-list" class="space-y-2"></ul>
+                </div>
+
+                <div>
+                  <h5 class="font-serif font-black text-brand-dark-green text-sm uppercase tracking-wide flex items-center gap-1.5 mb-3">
+                    <i class="fa-solid fa-bag-shopping text-brand-gold"></i>
+                    <span>Recommended Use & Care</span>
+                  </h5>
+                  <p id="modal-usage" class="text-gray-650 text-xs sm:text-sm leading-relaxed"></p>
+                  <span id="modal-origin" class="text-[10px] text-gray-500 font-sans italic block mt-3"></span>
+                </div>
+              </div>
+
+              <!-- Immediate inquiry triggers buttons footer -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-6 border-t border-gray-100 font-sans">
+                <a
+                  id="modal-whatsapp-link"
+                  href=""
+                  target="_blank"
+                  rel="noreferrer"
+                  class="w-full bg-[#25D366] hover:bg-[#128C7E] text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors text-xs uppercase tracking-wide"
+                >
+                  <i class="fa-brands fa-whatsapp text-lg"></i>
+                  <span>Inquire on WhatsApp</span>
+                </a>
+                <a
+                  href="tel:0836980596"
+                  class="w-full bg-brand-dark-green hover:bg-brand-green text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors text-xs uppercase tracking-wide"
+                >
+                  <i class="fa-solid fa-phone text-brand-gold"></i>
+                  <span>Call To Order Instead</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services activities directory section -->
+      <section id="services" class="hidden py-20 bg-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-64 h-64 bg-brand-green/5 rounded-full filter blur-3xl -z-10"></div>
+        <div class="absolute bottom-0 right-0 w-64 h-64 bg-brand-gold/5 rounded-full filter blur-3xl -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <span class="text-brand-green font-bold text-xs uppercase tracking-widest bg-brand-green/10 px-3.5 py-1 rounded-full inline-block font-sans">
+              Our Core Activities
+            </span>
+            <h2 class="font-serif text-3xl sm:text-4.5xl font-black text-brand-dark-green tracking-tight mt-3">
+              Services & Empowerment Programs
+            </h2>
+            <p class="font-sans text-gray-500 max-w-2xl mx-auto text-sm sm:text-base mt-2 leading-relaxed">
+              From professional traditional healing wisdom to active food sustainability campaigns, we develop scalable community solutions.
+            </p>
+            <div class="w-16 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+          </div>
+
+          <!-- Eight cards describing active service portfolios -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 text-left font-sans" id="services-cards-grid">
+            <!-- Traditional Healing -->
+            <div class="fade-in-section bg-brand-light-gray/60 hover:bg-white rounded-3xl p-6.5 border border-transparent hover:border-brand-gold/20 shadow-sm hover:shadow-xl transition-all duration-300 relative group cursor-pointer flex flex-col justify-between">
+              <div>
+                <div class="w-13 h-13 rounded-2xl bg-white border border-gray-150/80 shadow-sm flex items-center justify-center mb-5 group-hover:bg-brand-gold/20 transition-colors duration-300">
+                  <i class="fa-solid fa-wand-magic-sparkles text-brand-dark-green text-xl"></i>
+                </div>
+                <h3 class="font-serif font-black text-brand-dark-green text-base.5 tracking-tight mb-2 group-hover:text-brand-green transition-colors duration-200">
+                  Traditional Healing
+                </h3>
+                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  Holistic physical, mental and emotional diagnostics and remedies integrating traditional African medicine with 20+ years of healing lineage.
+                </p>
+              </div>
+              <div class="w-8 h-0.5 bg-brand-green/20 group-hover:w-full group-hover:bg-brand-gold transition-all duration-300 mt-2 rounded-full"></div>
+            </div>
+
+            <!-- Spiritual Counseling -->
+            <div class="fade-in-section bg-brand-light-gray/60 hover:bg-white rounded-3xl p-6.5 border border-transparent hover:border-brand-gold/20 shadow-sm hover:shadow-xl transition-all duration-300 relative group cursor-pointer flex flex-col justify-between">
+              <div>
+                <div class="w-13 h-13 rounded-2xl bg-white border border-gray-150/80 shadow-sm flex items-center justify-center mb-5 group-hover:bg-brand-gold/20 transition-colors duration-300">
+                  <i class="fa-solid fa-compass text-brand-dark-green text-xl"></i>
+                </div>
+                <h3 class="font-serif font-black text-brand-dark-green text-base.5 tracking-tight mb-2 group-hover:text-brand-green transition-colors duration-200">
+                  Spiritual Counseling
+                </h3>
+                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  Spiritual alignment sessions and ancestral guidance designed to resolve inner blockages, restoring peace, harmony, and systemic balance.
+                </p>
+              </div>
+              <div class="w-8 h-0.5 bg-brand-green/20 group-hover:w-full group-hover:bg-brand-gold transition-all duration-300 mt-2 rounded-full"></div>
+            </div>
+
+            <!-- Organic Cultivation -->
+            <div class="fade-in-section bg-brand-light-gray/60 hover:bg-white rounded-3xl p-6.5 border border-transparent hover:border-brand-gold/20 shadow-sm hover:shadow-xl transition-all duration-300 relative group cursor-pointer flex flex-col justify-between">
+              <div>
+                <div class="w-13 h-13 rounded-2xl bg-white border border-gray-150/80 shadow-sm flex items-center justify-center mb-5 group-hover:bg-brand-gold/20 transition-colors duration-300">
+                  <i class="fa-solid fa-seedling text-brand-dark-green text-xl"></i>
+                </div>
+                <h3 class="font-serif font-black text-brand-dark-green text-base.5 tracking-tight mb-2 group-hover:text-brand-green transition-colors duration-200">
+                  Indigenous Cultivation
+                </h3>
+                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  Pioneering organic cultivation projects of indigenous plants to preserve biodiversity while creating highly potent herbal resources.
+                </p>
+              </div>
+              <div class="w-8 h-0.5 bg-brand-green/20 group-hover:w-full group-hover:bg-brand-gold transition-all duration-300 mt-2 rounded-full"></div>
+            </div>
+
+            <!-- Agricultural Training -->
+            <div class="fade-in-section bg-brand-light-gray/60 hover:bg-white rounded-3xl p-6.5 border border-transparent hover:border-brand-gold/20 shadow-sm hover:shadow-xl transition-all duration-300 relative group cursor-pointer flex flex-col justify-between">
+              <div>
+                <div class="w-13 h-13 rounded-2xl bg-white border border-gray-150/80 shadow-sm flex items-center justify-center mb-5 group-hover:bg-brand-gold/20 transition-colors duration-300">
+                  <i class="fa-solid fa-user-graduate text-brand-dark-green text-xl"></i>
+                </div>
+                <h3 class="font-serif font-black text-brand-dark-green text-base.5 tracking-tight mb-2 group-hover:text-brand-green transition-colors duration-200">
+                  Agricultural Training
+                </h3>
+                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  Practical training courses on agro-ecology, compost design, sustainable water harvesting, and high-density community gardening.
+                </p>
+              </div>
+              <div class="w-8 h-0.5 bg-brand-green/20 group-hover:w-full group-hover:bg-brand-gold transition-all duration-300 mt-2 rounded-full"></div>
+            </div>
+
+            <!-- Food Security Programs -->
+            <div class="fade-in-section bg-brand-light-gray/60 hover:bg-white rounded-3xl p-6.5 border border-transparent hover:border-brand-gold/20 shadow-sm hover:shadow-xl transition-all duration-300 relative group cursor-pointer flex flex-col justify-between">
+              <div>
+                <div class="w-13 h-13 rounded-2xl bg-white border border-gray-150/80 shadow-sm flex items-center justify-center mb-5 group-hover:bg-brand-gold/20 transition-colors duration-300">
+                  <i class="fa-solid fa-circle-check text-brand-dark-green text-xl"></i>
+                </div>
+                <h3 class="font-serif font-black text-brand-dark-green text-base.5 tracking-tight mb-2 group-hover:text-brand-green transition-colors duration-200">
+                  Food Security Programs
+                </h3>
+                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  Formulating robust, resilient localized hunger-relief nets by helping neighborhoods establish cooperative gardens and feed projects.
+                </p>
+              </div>
+              <div class="w-8 h-0.5 bg-brand-green/20 group-hover:w-full group-hover:bg-brand-gold transition-all duration-300 mt-2 rounded-full"></div>
+            </div>
+
+            <!-- Community Development -->
+            <div class="fade-in-section bg-brand-light-gray/60 hover:bg-white rounded-3xl p-6.5 border border-transparent hover:border-brand-gold/20 shadow-sm hover:shadow-xl transition-all duration-300 relative group cursor-pointer flex flex-col justify-between">
+              <div>
+                <div class="w-13 h-13 rounded-2xl bg-white border border-gray-150/80 shadow-sm flex items-center justify-center mb-5 group-hover:bg-brand-gold/20 transition-colors duration-300">
+                  <i class="fa-solid fa-users text-brand-dark-green text-xl"></i>
+                </div>
+                <h3 class="font-serif font-black text-brand-dark-green text-base.5 tracking-tight mb-2 group-hover:text-brand-green transition-colors duration-200">
+                  Community Development
+                </h3>
+                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  Strategic planning, cooperative incubation, and collaborative capacity-building to foster self-reliant, highly driven, healthy townships.
+                </p>
+              </div>
+              <div class="w-8 h-0.5 bg-brand-green/20 group-hover:w-full group-hover:bg-brand-gold transition-all duration-300 mt-2 rounded-full"></div>
+            </div>
+
+            <!-- Skills Development Training -->
+            <div class="fade-in-section bg-brand-light-gray/60 hover:bg-white rounded-3xl p-6.5 border border-transparent hover:border-brand-gold/20 shadow-sm hover:shadow-xl transition-all duration-300 relative group cursor-pointer flex flex-col justify-between">
+              <div>
+                <div class="w-13 h-13 rounded-2xl bg-white border border-gray-150/80 shadow-sm flex items-center justify-center mb-5 group-hover:bg-brand-gold/20 transition-colors duration-300">
+                  <i class="fa-solid fa-book-open text-brand-dark-green text-xl"></i>
+                </div>
+                <h3 class="font-serif font-black text-brand-dark-green text-base.5 tracking-tight mb-2 group-hover:text-brand-green transition-colors duration-200">
+                  Skills Training
+                </h3>
+                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  Workshops covering medicinal herb processing, agricultural management, and commercial-readiness for young local entrepreneurs.
+                </p>
+              </div>
+              <div class="w-8 h-0.5 bg-brand-green/20 group-hover:w-full group-hover:bg-brand-gold transition-all duration-300 mt-2 rounded-full"></div>
+            </div>
+
+            <!-- Job Creation Initiatives -->
+            <div class="fade-in-section bg-brand-light-gray/60 hover:bg-white rounded-3xl p-6.5 border border-transparent hover:border-brand-gold/20 shadow-sm hover:shadow-xl transition-all duration-300 relative group cursor-pointer flex flex-col justify-between">
+              <div>
+                <div class="w-13 h-13 rounded-2xl bg-white border border-gray-150/80 shadow-sm flex items-center justify-center mb-5 group-hover:bg-brand-gold/20 transition-colors duration-300">
+                  <i class="fa-solid fa-briefcase text-brand-dark-green text-xl"></i>
+                </div>
+                <h3 class="font-serif font-black text-brand-dark-green text-base.5 tracking-tight mb-2 group-hover:text-brand-green transition-colors duration-200">
+                  Job Creation
+                </h3>
+                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  Transforming agricultural and natural health projects into enduring hubs of local employment, creating reliable family-level income streams.
+                </p>
+              </div>
+              <div class="w-8 h-0.5 bg-brand-green/20 group-hover:w-full group-hover:bg-brand-gold transition-all duration-300 mt-2 rounded-full"></div>
+            </div>
+          </div>
+
+          <!-- Alert callout banner to schedule appointments -->
+          <div class="mt-16 bg-gradient-to-r from-brand-dark-green to-brand-green text-white rounded-3xl p-8 sm:p-10 shadow-lg text-center relative overflow-hidden max-w-4xl mx-auto">
+            <div class="absolute top-0 right-0 opacity-10">
+              <i class="fa-solid fa-wand-magic-sparkles text-9xl"></i>
+            </div>
+            <h3 class="font-serif text-xl sm:text-2xl font-black mb-3 text-white">
+              Need Expert Traditional Counsel or Program Inquiries?
+            </h3>
+            <p class="text-brand-light-gray/80 text-sm sm:text-base max-w-xl mx-auto mb-6">
+              Get in touch directly with Dr. Doctor Tefo Makutsoane for appointments, organic farming consults, or partnership opportunities.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 text-xs font-sans">
+              <a
+                href="https://wa.me/27836980596?text=Hello%20Dr.%20Tefo%2C%20I%20would%20like%20to%20schedule%20a%20consultation%2Fsession."
+                target="_blank"
+                rel="noreferrer"
+                class="bg-[#25D366] hover:bg-[#128C7E] text-white font-bold py-3.5 px-6 rounded-full inline-flex items-center justify-center gap-2 transition-colors uppercase tracking-wider"
+              >
+                <i class="fa-brands fa-whatsapp text-base"></i>
+                <span>Connect on WhatsApp</span>
+              </a>
+              <a
+                href="#contact"
+                class="bg-brand-gold hover:bg-white text-brand-dark-green font-bold py-3.5 px-6 rounded-full inline-flex items-center justify-center transition-all uppercase tracking-wider"
+              >
+                <span>Send An Email Request</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio gallery filtering section -->
+      <section id="gallery" class="hidden py-20 bg-brand-light-gray relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-brand-green/5 blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <span class="text-brand-green font-bold text-xs uppercase tracking-widest bg-brand-green/10 px-3.5 py-1 rounded-full inline-block font-sans">
+              Our Portfolio
+            </span>
+            <h2 class="font-serif text-3xl sm:text-4.5xl font-black text-brand-dark-green tracking-tight mt-3">
+              CBO Project Image Gallery
+            </h2>
+            <p class="font-sans text-gray-500 max-w-2xl mx-auto text-sm sm:text-base mt-2 leading-relaxed">
+              A visual documentation of our food gardens, medicinal harvests, skills development workshops, traditional healing sessions, and community events.
+            </p>
+            <div class="w-16 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+          </div>
+
+          <!-- Photo categories filter bar -->
+          <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12 font-sans" id="gallery-filters-row">
+            <button data-filter="all" class="px-4.5 py-2.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide uppercase transition-all duration-300 bg-brand-dark-green text-brand-gold shadow-md scale-[1.03]">All Photos</button>
+            <button data-filter="projects" class="px-4.5 py-2.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide uppercase transition-all duration-300 bg-white hover:bg-brand-green/10 text-brand-dark-green border border-gray-200/60">Projects & Youth</button>
+            <button data-filter="gardens" class="px-4.5 py-2.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide uppercase transition-all duration-300 bg-white hover:bg-brand-green/10 text-brand-dark-green border border-gray-200/60">Food Gardens</button>
+            <button data-filter="medicinal" class="px-4.5 py-2.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide uppercase transition-all duration-300 bg-white hover:bg-brand-green/10 text-brand-dark-green border border-gray-200/60">Medicinal Cultivation</button>
+            <button data-filter="training" class="px-4.5 py-2.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide uppercase transition-all duration-300 bg-white hover:bg-brand-green/10 text-brand-dark-green border border-gray-200/60">Training Sessions</button>
+            <button data-filter="healing" class="px-4.5 py-2.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide uppercase transition-all duration-300 bg-white hover:bg-brand-green/10 text-brand-dark-green border border-gray-200/60">Traditional Healing</button>
+          </div>
+
+          <!-- Dynamic image grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="gallery-images-grid">
+            <!-- Thriving Communal Gardens -->
+            <div class="relative aspect-square rounded-3xl overflow-hidden shadow-md border border-gray-150/70 group cursor-pointer bg-white" data-index="0">
+              <img src="src/assets/images/community_gardens_1780660981486.png" alt="Thriving Communal Gardens" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark-green/90 via-brand-dark-green/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white text-left">
+                <span class="text-brand-gold text-[9px] uppercase tracking-widest font-bold font-sans block mb-1">gardens</span>
+                <h3 class="font-serif font-bold text-base leading-tight">Thriving Communal Gardens</h3>
+                <p class="text-[11px] text-white/80 line-clamp-1 mt-1 font-sans">Locals caring for organic crops and establishing absolute security in our food garden in Botshabelo.</p>
+              </div>
+              <div class="absolute top-4 right-4 bg-brand-gold/90 text-brand-dark-green p-2.5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-90 group-hover:scale-100 shadow-md">
+                <i class="fa-solid fa-magnifying-glass-plus w-4 h-4 flex items-center justify-center"></i>
+              </div>
+            </div>
+
+            <!-- Medicinal Plant Nursery -->
+            <div class="relative aspect-square rounded-3xl overflow-hidden shadow-md border border-gray-150/70 group cursor-pointer bg-white" data-index="1">
+              <img src="src/assets/images/medicinal_plants_1780660999130.png" alt="Medicinal Plant Nursery" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark-green/90 via-brand-dark-green/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white text-left">
+                <span class="text-brand-gold text-[9px] uppercase tracking-widest font-bold font-sans block mb-1">medicinal</span>
+                <h3 class="font-serif font-bold text-base leading-tight">Medicinal Plant Nursery</h3>
+                <p class="text-[11px] text-white/80 line-clamp-1 mt-1 font-sans">Cultivation and preparation of essential traditional healing plants and herbs.</p>
+              </div>
+              <div class="absolute top-4 right-4 bg-brand-gold/90 text-brand-dark-green p-2.5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-90 group-hover:scale-100 shadow-md">
+                <i class="fa-solid fa-magnifying-glass-plus w-4 h-4 flex items-center justify-center"></i>
+              </div>
+            </div>
+
+            <!-- Cooperative Agricultural Training -->
+            <div class="relative aspect-square rounded-3xl overflow-hidden shadow-md border border-gray-150/70 group cursor-pointer bg-white" data-index="2">
+              <img src="https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&w=800&q=80" alt="Cooperative Agricultural Training" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark-green/90 via-brand-dark-green/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white text-left">
+                <span class="text-brand-gold text-[9px] uppercase tracking-widest font-bold font-sans block mb-1">training</span>
+                <h3 class="font-serif font-bold text-base leading-tight">Cooperative Agricultural Training</h3>
+                <p class="text-[11px] text-white/80 line-clamp-1 mt-1 font-sans">Empowering community members and local youth with sustainable farming skills and plant processing.</p>
+              </div>
+              <div class="absolute top-4 right-4 bg-brand-gold/90 text-brand-dark-green p-2.5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-90 group-hover:scale-100 shadow-md">
+                <i class="fa-solid fa-magnifying-glass-plus w-4 h-4 flex items-center justify-center"></i>
+              </div>
+            </div>
+
+            <!-- Traditional Healing Consultancy -->
+            <div class="relative aspect-square rounded-3xl overflow-hidden shadow-md border border-gray-150/70 group cursor-pointer bg-white" data-index="3">
+              <img src="src/assets/images/dr_tefo_makutsoane_1780660966137.png" alt="Traditional Healing Consultancy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark-green/90 via-brand-dark-green/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white text-left">
+                <span class="text-brand-gold text-[9px] uppercase tracking-widest font-bold font-sans block mb-1">healing</span>
+                <h3 class="font-serif font-bold text-base leading-tight">Traditional Healing Consultancy</h3>
+                <p class="text-[11px] text-white/80 line-clamp-1 mt-1 font-sans">One-on-one traditional African diagnostic and health consultation with Dr. Doctor Tefo Makutsoane.</p>
+              </div>
+              <div class="absolute top-4 right-4 bg-brand-gold/90 text-brand-dark-green p-2.5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-90 group-hover:scale-100 shadow-md">
+                <i class="fa-solid fa-magnifying-glass-plus w-4 h-4 flex items-center justify-center"></i>
+              </div>
+            </div>
+
+            <!-- Youth Gardening Initiative -->
+            <div class="relative aspect-square rounded-3xl overflow-hidden shadow-md border border-gray-150/70 group cursor-pointer bg-white" data-index="4">
+              <img src="src/assets/images/tsheetsano_hero_1780660950381.png" alt="Youth Gardening Initiative" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark-green/90 via-brand-dark-green/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white text-left">
+                <span class="text-brand-gold text-[9px] uppercase tracking-widest font-bold font-sans block mb-1">projects</span>
+                <h3 class="font-serif font-bold text-base leading-tight">Youth Gardening Initiative</h3>
+                <p class="text-[11px] text-white/80 line-clamp-1 mt-1 font-sans">Youth from the Free State participating in organic cultivation and local retail operations.</p>
+              </div>
+              <div class="absolute top-4 right-4 bg-brand-gold/90 text-brand-dark-green p-2.5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-90 group-hover:scale-100 shadow-md">
+                <i class="fa-solid fa-magnifying-glass-plus w-4 h-4 flex items-center justify-center"></i>
+              </div>
+            </div>
+
+            <!-- High-Yield Harvesting -->
+            <div class="relative aspect-square rounded-3xl overflow-hidden shadow-md border border-gray-150/70 group cursor-pointer bg-white" data-index="5">
+              <img src="https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=800&q=80" alt="High-Yield Harvesting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark-green/90 via-brand-dark-green/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white text-left">
+                <span class="text-brand-gold text-[9px] uppercase tracking-widest font-bold font-sans block mb-1">gardens</span>
+                <h3 class="font-serif font-bold text-base leading-tight">High-Yield Harvesting</h3>
+                <p class="text-[11px] text-white/80 line-clamp-1 mt-1 font-sans">Abundant growth of organic vegetables packed with nutrition, prepared for community distribution.</p>
+              </div>
+              <div class="absolute top-4 right-4 bg-brand-gold/90 text-brand-dark-green p-2.5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-90 group-hover:scale-100 shadow-md">
+                <i class="fa-solid fa-magnifying-glass-plus w-4 h-4 flex items-center justify-center"></i>
+              </div>
+            </div>
+
+            <!-- Empowerment Workshop -->
+            <div class="relative aspect-square rounded-3xl overflow-hidden shadow-md border border-gray-150/70 group cursor-pointer bg-white" data-index="6">
+              <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Empowerment Workshop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark-green/90 via-brand-dark-green/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white text-left">
+                <span class="text-brand-gold text-[9px] uppercase tracking-widest font-bold font-sans block mb-1">training</span>
+                <h3 class="font-serif font-bold text-base leading-tight">Empowerment Workshop</h3>
+                <p class="text-[11px] text-white/80 line-clamp-1 mt-1 font-sans">Training community leaders to replicate self-reliance agricultural programs.</p>
+              </div>
+              <div class="absolute top-4 right-4 bg-brand-gold/90 text-brand-dark-green p-2.5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-90 group-hover:scale-100 shadow-md">
+                <i class="fa-solid fa-magnifying-glass-plus w-4 h-4 flex items-center justify-center"></i>
+              </div>
+            </div>
+
+            <!-- Indigenous Herb Dryhouse -->
+            <div class="relative aspect-square rounded-3xl overflow-hidden shadow-md border border-gray-150/70 group cursor-pointer bg-white" data-index="7">
+              <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&q=80" alt="Indigenous Herb Dryhouse" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark-green/90 via-brand-dark-green/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white text-left">
+                <span class="text-brand-gold text-[9px] uppercase tracking-widest font-bold font-sans block mb-1">medicinal</span>
+                <h3 class="font-serif font-bold text-base leading-tight">Indigenous Herb Dryhouse</h3>
+                <p class="text-[11px] text-white/80 line-clamp-1 mt-1 font-sans">Controlled and sterilized drying process of medicinal herbs for safe wellness products.</p>
+              </div>
+              <div class="absolute top-4 right-4 bg-brand-gold/90 text-brand-dark-green p-2.5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-90 group-hover:scale-100 shadow-md">
+                <i class="fa-solid fa-magnifying-glass-plus w-4 h-4 flex items-center justify-center"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Empty filter placeholder elements -->
+          <div id="empty-gallery" class="hidden text-center py-16 bg-white rounded-3xl border border-gray-200 shadow-sm font-sans">
+            <i class="fa-solid fa-circle-info text-gray-300 text-3xl mb-3 block"></i>
+            <span class="text-gray-400 block text-sm">No photos available under this category.</span>
+          </div>
+        </div>
+
+        <!-- Lightbox framework overlays view (Controlled by script.js) -->
+        <div
+          id="lightbox-container"
+          class="hidden fixed inset-0 z-50 flex flex-col justify-center items-center p-4 sm:p-6"
+        >
+          <!-- Backdrop overlay -->
+          <div class="absolute inset-0 bg-black/95 backdrop-blur-md"></div>
+
+          <!-- Dialog content box -->
+          <div class="relative w-full max-w-4xl z-10 flex flex-col text-center sm:text-left">
+            <!-- Main Photo Slider Frame -->
+            <div class="relative aspect-[4/3] max-h-[70vh] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl bg-black border border-white/10 flex items-center justify-center">
+              <img src="" alt="" class="max-h-full max-w-full object-contain" />
+
+              <!-- Left arrow slider -->
+              <button class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white text-white hover:text-brand-dark-green p-3 rounded-full backdrop-blur-md transition-all border border-white/10 flex items-center justify-center w-12 h-12" aria-label="Previous image">
+                <i class="fa-solid fa-chevron-left text-lg"></i>
+              </button>
+
+              <!-- Right arrow slider -->
+              <button class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white text-white hover:text-brand-dark-green p-3 rounded-full backdrop-blur-md transition-all border border-white/10 flex items-center justify-center w-12 h-12" aria-label="Next image">
+                <i class="fa-solid fa-chevron-right text-lg"></i>
+              </button>
+
+              <!-- Close overlay lightbox trigger -->
+              <button class="absolute top-4 right-4 bg-black/60 hover:bg-white text-white hover:text-brand-dark-green p-2.5 rounded-full backdrop-blur-md transition-all border border-white/10 flex items-center justify-center w-10 h-10" aria-label="Close lightbox">
+                <i class="fa-solid fa-xmark text-lg"></i>
+              </button>
+            </div>
+
+            <!-- Description details card below mapping indexes -->
+            <div class="mt-4 p-4 text-white bg-white/5 border border-white/10 rounded-2xl shrink-0 font-sans">
+              <span class="cap-category text-brand-gold text-[10px] uppercase font-bold tracking-widest block mb-1"></span>
+              <h3 class="cap-title font-serif font-black text-lg text-white"></h3>
+              <p class="cap-desc text-xs sm:text-sm text-gray-305 font-sans leading-relaxed mt-1"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Directory & validation input sheet section -->
+      <section id="contact" class="hidden py-20 bg-white relative overflow-hidden">
+        <div class="absolute top-1/2 right-0 -mr-32 w-96 h-96 bg-brand-gold/5 rounded-full filter blur-3xl -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 font-sans">
+          <div class="text-center mb-16">
+            <span class="text-brand-green font-bold text-xs uppercase tracking-widest bg-brand-green/10 px-3.5 py-1 rounded-full inline-block">
+              Get In Touch
+            </span>
+            <h2 class="font-serif text-3xl sm:text-4.5xl font-black text-brand-dark-green tracking-tight mt-3">
+              Contact TSHEETSANO Office & Team
+            </h2>
+            <p class="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base mt-2 leading-relaxed font-sans">
+              We are here to support your health, spiritual, and community training inquiries. Feel free to reach out via phone, email or our online contact form.
+            </p>
+            <div class="w-16 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 text-left" id="contact-split-grid">
+            <!-- Left panel: registry contacts -->
+            <div class="lg:col-span-5 space-y-6 flex flex-col justify-between" id="contact-details-panel">
+              <div class="space-y-6">
+                <h3 class="font-serif font-black text-brand-dark-green text-2xl tracking-tight mb-4">
+                  Official Directory
+                </h3>
+
+                <!-- Address -->
+                <div class="bg-brand-light-gray/60 border border-gray-150 rounded-2xl p-5.5 flex items-start space-x-4.5 hover:border-brand-green/20 transition-colors duration-300">
+                  <div class="w-12 h-12 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center shrink-0 text-brand-green">
+                    <i class="fa-solid fa-map-pin text-brand-dark-green text-lg"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-serif font-black text-brand-dark-green text-sm.5 uppercase tracking-wider mb-1">
+                      Physical Address
+                    </h4>
+                    <p class="text-gray-650 text-sm leading-relaxed font-sans">
+                      House No. 1897 Section B<br />
+                      Botshabelo, 9781<br />
+                      Free State, South Africa
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="bg-brand-light-gray/60 border border-gray-150 rounded-2xl p-5.5 flex items-start space-x-4.5 hover:border-brand-green/20 transition-colors duration-300">
+                  <div class="w-12 h-12 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center shrink-0 text-brand-green">
+                    <i class="fa-solid fa-envelope text-brand-dark-green text-lg"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-serif font-black text-brand-dark-green text-sm.5 uppercase tracking-wider mb-1">
+                      Email Contact
+                    </h4>
+                    <a
+                      href="mailto:tsheetsanodtm1@gmail.com"
+                      class="text-brand-dark-green hover:text-brand-green hover:underline text-sm font-semibold block transition-colors duration-200"
+                      id="contact-email-link"
+                    >
+                      tsheetsanodtm1@gmail.com
+                    </a>
+                    <span class="text-[10px] text-gray-400 font-sans block mt-1">
+                      Monitored daily by our administrative coordinators
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Phone Line -->
+                <div class="bg-brand-light-gray/60 border border-gray-150 rounded-2xl p-5.5 flex items-start space-x-4.5 hover:border-brand-green/20 transition-colors duration-300">
+                  <div class="w-12 h-12 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center shrink-0 text-brand-green">
+                    <i class="fa-solid fa-phone text-brand-dark-green text-lg"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-serif font-black text-brand-dark-green text-sm.5 uppercase tracking-wider mb-1">
+                      Call Directory
+                    </h4>
+                    <div class="space-y-1">
+                      <a
+                        href="tel:0836980596"
+                        class="text-brand-dark-green hover:text-brand-green text-base font-bold block leading-none transition-colors duration-200"
+                      >
+                        083 698 0596 <span class="text-[10px] text-gray-500 font-normal uppercase font-sans">(Primary)</span>
+                      </a>
+                      <a
+                        href="tel:0721790707"
+                        class="text-brand-dark-green hover:text-brand-green text-base font-bold block leading-none transition-colors duration-200"
+                      >
+                        072 179 0707 <span class="text-[10px] text-gray-500 font-normal uppercase font-sans">(Secondary)</span>
+                      </a>
+                    </div>
+                    <span class="text-[10px] text-gray-400 font-sans block mt-1.5">
+                      Available during business hours (8:00 AM – 5:00 PM SAST)
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social links bar including whatsapp, tiktok -->
+              <div class="pt-6 border-t border-gray-100 font-sans">
+                <h4 class="font-serif font-black text-brand-dark-green text-[13px] uppercase tracking-widest mb-4">
+                  Connect Digitally & Social Channels
+                </h4>
+                <div class="flex flex-wrap items-center gap-3">
+                  <!-- Instant WhatsApp Quick Link -->
+                  <a
+                    href="https://wa.me/27836980596?text=Hello%20TSHEETSANO%20CBO%20and%20Enterprise."
+                    target="_blank"
+                    rel="noreferrer"
+                    class="bg-[#25D366] hover:bg-[#128C7E] text-white py-3 px-6 rounded-2xl flex items-center gap-2 font-bold text-xs uppercase tracking-wider shadow-md transition-colors"
+                    id="contact-whatsapp-btn"
+                  >
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Chat on WhatsApp</span>
+                  </a>
+
+                  <!-- FB -->
+                  <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="w-11 h-11 rounded-2xl bg-brand-light-gray hover:bg-brand-dark-green hover:text-white flex items-center justify-center transition-colors text-brand-dark-green border border-gray-200/50"
+                    aria-label="Facebook Link"
+                  >
+                    <i class="fa-brands fa-facebook-f text-lg"></i>
+                  </a>
+
+                  <!-- IG -->
+                  <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="w-11 h-11 rounded-2xl bg-brand-light-gray hover:bg-brand-dark-green hover:text-white flex items-center justify-center transition-colors text-brand-dark-green border border-gray-200/50"
+                    aria-label="Instagram Link"
+                  >
+                    <i class="fa-brands fa-instagram text-lg"></i>
+                  </a>
+
+                  <!-- YT -->
+                  <a
+                    href="https://youtube.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="w-11 h-11 rounded-2xl bg-brand-light-gray hover:bg-brand-dark-green hover:text-white flex items-center justify-center transition-colors text-brand-dark-green border border-gray-200/50"
+                    aria-label="YouTube Link"
+                  >
+                    <i class="fa-brands fa-youtube text-lg"></i>
+                  </a>
+
+                  <!-- TikTok -->
+                  <a
+                    href="https://tiktok.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="w-11 h-11 rounded-2xl bg-brand-light-gray hover:bg-brand-dark-green hover:text-white flex items-center justify-center transition-colors text-brand-dark-green border border-gray-200/50"
+                    aria-label="TikTok Link"
+                  >
+                    <i class="fa-brands fa-tiktok text-lg"></i>
+                  </a>
+
+                  <!-- WhatsApp Link Icon (Secondary) -->
+                  <a
+                    href="https://wa.me/27836980596"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="w-11 h-11 rounded-2xl bg-brand-light-gray hover:bg-brand-dark-green hover:text-white flex items-center justify-center transition-colors text-brand-dark-green border border-gray-200/50"
+                    aria-label="WhatsApp Link"
+                  >
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Panel: Contact validation Form sheets -->
+            <div class="lg:col-span-7" id="contact-form-panel">
+              <div class="bg-brand-light-gray/60 p-6 sm:p-10.5 rounded-3xl border border-gray-150">
+                <h3 class="font-serif font-black text-brand-dark-green text-2xl mb-2 text-brand-dark-green">
+                  Send Us a Note
+                </h3>
+                <p class="text-gray-500 font-sans text-xs sm:text-sm mb-8 leading-relaxed">
+                  Whether you are seeking custom healing products, booking traditional consult sessions, or seeking local training, we welcome your requests.
+                </p>
+
+                <form id="contact-form-node" class="space-y-5">
+                  <!-- Name Input -->
+                  <div>
+                    <label for="form-name-input" class="block text-xs sm:text-sm font-bold text-brand-dark-green uppercase mb-2">
+                      Your Name
+                    </label>
+                    <input
+                      type="text"
+                      id="form-name-input"
+                      name="name"
+                      placeholder="e.g., Jane Sithole"
+                      class="w-full bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-green rounded-xl p-3.5 text-sm transition-all"
+                    />
+                  </div>
+
+                  <!-- Email & phone row -->
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div>
+                      <label for="form-email-input" class="block text-xs sm:text-sm font-bold text-brand-dark-green uppercase mb-2">
+                        Email Address
+                      </label>
+                      <input
+                        type="email"
+                        id="form-email-input"
+                        name="email"
+                        placeholder="e.g., jane@gmail.com"
+                        class="w-full bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-green rounded-xl p-3.5 text-sm transition-all"
+                      />
+                    </div>
+
+                    <div>
+                      <label for="form-phone-input" class="block text-xs sm:text-sm font-bold text-brand-dark-green uppercase mb-2">
+                        Contact Phone
+                      </label>
+                      <input
+                        type="tel"
+                        id="form-phone-input"
+                        name="phone"
+                        placeholder="e.g., 083 698 0596"
+                        class="w-full bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-green rounded-xl p-3.5 text-sm transition-all"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Messages -->
+                  <div>
+                    <label for="form-message-input" class="block text-xs sm:text-sm font-bold text-brand-dark-green uppercase mb-2">
+                      Your Message
+                    </label>
+                    <textarea
+                      id="form-message-input"
+                      name="message"
+                      placeholder="Please specify your request or questions here..."
+                      rows="5"
+                      class="w-full bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-green rounded-xl p-3.5 text-sm transition-all"
+                    ></textarea>
+                  </div>
+
+                  <!-- Toast notification template hidden initially -->
+                  <div
+                    id="form-success-toast"
+                    class="hidden bg-brand-green/10 border border-brand-green/35 text-brand-dark-green p-4 rounded-xl flex items-center space-x-3.5"
+                  >
+                    <i class="fa-solid fa-circle-check text-brand-dark-green text-xl shrink-0"></i>
+                    <p class="text-xs sm:text-sm font-medium leading-normal">
+                      <strong>Thank you!</strong> Your message has been validation-checked and sent successfully. Our coordinators will reach out shortly.
+                    </p>
+                  </div>
+
+                  <!-- Submit button -->
+                  <button
+                    type="submit"
+                    id="form-submit-submit-btn"
+                    class="w-full bg-brand-dark-green hover:bg-brand-green disabled:bg-gray-400 text-white font-bold py-4.5 rounded-xl uppercase tracking-widest text-xs sm:text-sm flex items-center justify-center gap-2 shadow-xl hover:shadow-2xl transition-all duration-300 pointer-events-auto"
+                  >
+                    <span>Send Message</span>
+                    <i class="fa-solid fa-paper-plane text-xs"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botshabelo Map widgets -->
+          <div class="mt-16 relative" id="embedded-map-canvas">
+            <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-md rounded-2xl p-4.5 shadow-xl border border-gray-250 z-10 hidden sm:block max-w-sm">
+              <span class="text-brand-green text-[10px] uppercase font-bold tracking-widest block mb-1">
+                Main Center of Operations
+              </span>
+              <h4 class="font-serif font-black text-brand-dark-green text-sm.5 text-brand-dark-green">
+                Botshabelo Township
+              </h4>
+              <p class="text-gray-500 text-xs mt-1">
+                Located in the Free State Province of South Africa, supporting sustainable local agriculture and community resilience campaigns.
+              </p>
+            </div>
+            <div class="w-full h-96 rounded-3xl overflow-hidden shadow-xl border-4 border-brand-light-gray relative">
+              <iframe
+                title="TSHEETSANO Geographic Map - Botshabelo South Africa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14316.593798418706!2d26.71180435165682!3d-29.231011831862593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e8fc6d4b971a17b%3A0xbc4e2be8eec1368b!2sBotshabelo!5e0!3m2!1sen!2sza!4v1780000000000!5m2!1sen!2sza"
+                class="w-full h-full border-0"
+                allowfullscreen="true"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer of CBO portal -->
+    <footer class="bg-brand-dark-green text-white relative overflow-hidden pt-16 pb-8" id="footer-main">
+      <div class="absolute inset-0 bg-black/15 pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Footer links row directories -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-white/10 text-left">
+          <!-- Column 1 Brand Info -->
+          <div class="space-y-6">
+            <a href="#home" class="flex items-center space-x-2.5 group">
+              <div class="w-10 h-10 rounded-full overflow-hidden bg-white/10 flex items-center justify-center shadow-md">
+                <img
+                  src="src/assets/images/tsheetsano_logo_1780661484232.png"
+                  alt="TSHEETSANO Logo"
+                  class="w-full h-full object-cover"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="flex flex-col text-white">
+                <span class="font-serif font-bold text-lg leading-tight tracking-wide group-hover:text-brand-gold transition-colors duration-200">
+                  TSHEETSANO
+                </span>
+                <span class="text-[10px] tracking-wider uppercase opacity-85 font-sans font-medium">
+                  CBO & Enterprise
+                </span>
+              </div>
+            </a>
+            <p class="font-sans text-brand-light-gray/80 text-sm leading-relaxed">
+              TSHEETSANO is dedicated to changing lives affected by hunger and poverty in South Africa through sustainable agricultural nurseries, crop security training, and holistic spiritual guidance.
+            </p>
+            <div class="inline-block border border-brand-gold/30 bg-brand-gold/10 px-4.5 py-2.5 rounded-xl font-sans">
+              <span class="text-brand-gold font-serif font-black italic block text-[13px] tracking-wide text-center">
+                "Reaching People, Changing Lives."
+              </span>
+            </div>
+          </div>
+
+          <!-- Column 2 Links -->
+          <div>
+            <h4 class="font-serif font-bold text-brand-gold text-base tracking-wide border-b border-brand-green pb-2 mb-6 text-brand-gold">
+              Quick Navigation
+            </h4>
+            <ul class="space-y-3 font-sans text-sm text-brand-light-gray/80">
+              <li><a href="#home" class="hover:text-brand-gold hover:underline transition-all block">Home Landing</a></li>
+              <li><a href="#about" class="hover:text-brand-gold hover:underline transition-all block">About Dr. Tefo & Organization</a></li>
+              <li><a href="#products" class="hover:text-brand-gold hover:underline transition-all block">Products & Herbal Medicine</a></li>
+              <li><a href="#services" class="hover:text-brand-gold hover:underline transition-all block">Services & Operations</a></li>
+              <li><a href="#gallery" class="hover:text-brand-gold hover:underline transition-all block">Project Photo Gallery</a></li>
+              <li><a href="#contact" class="hover:text-brand-gold hover:underline transition-all block">Contact Directory & Mail</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3 Contacts info direct -->
+          <div>
+            <h4 class="font-serif font-bold text-brand-gold text-base tracking-wide border-b border-brand-green pb-2 mb-6 text-brand-gold">
+              Registry Contacts
+            </h4>
+            <ul class="space-y-4 font-sans text-sm text-brand-light-gray/80">
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-map-pin text-brand-gold mt-1"></i>
+                <span>
+                  House No. 1897 Section B<br />
+                  Botshabelo, 9781, Free State<br />
+                  South Africa
+                </span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-envelope text-brand-gold"></i>
+                <a href="mailto:tsheetsanodtm1@gmail.com" class="hover:text-brand-gold hover:underline">
+                  tsheetsanodtm1@gmail.com
+                </a>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-phone text-brand-gold mt-1"></i>
+                <div class="flex flex-col">
+                  <a href="tel:0836980596" class="hover:text-brand-gold">083 698 0596</a>
+                  <a href="tel:0721790707" class="hover:text-brand-gold mt-1">072 179 0707</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 4 social elements tiktok whatsapp -->
+          <div class="space-y-6">
+            <h4 class="font-serif font-bold text-brand-gold text-base tracking-wide border-b border-brand-green pb-2 mb-6 text-brand-gold">
+              Our Visionary Cause
+            </h4>
+            <p class="font-sans text-brand-light-gray/80 text-sm leading-relaxed">
+              We empower youth, women, and the unemployed through agro-ecological cooperatives, building health resilience and economic self-reliance across South African townships.
+            </p>
+            <div class="flex items-center space-x-3 text-white/50">
+              <a href="https://facebook.com" target="_blank" rel="noreferrer" class="hover:text-brand-gold transition-colors" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f text-lg"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noreferrer" class="hover:text-brand-gold transition-colors" aria-label="Instagram">
+                <i class="fa-brands fa-instagram text-lg"></i>
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noreferrer" class="hover:text-brand-gold transition-colors" aria-label="YouTube">
+                <i class="fa-brands fa-youtube text-lg"></i>
+              </a>
+              <a href="https://tiktok.com" target="_blank" rel="noreferrer" class="hover:text-brand-gold transition-colors" aria-label="TikTok">
+                <i class="fa-brands fa-tiktok text-lg"></i>
+              </a>
+              <a href="https://wa.me/27836980596" target="_blank" rel="noreferrer" class="hover:text-brand-gold transition-colors" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lower row copyrights details metadata -->
+        <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-4" id="footer-copyright-node">
+          <p class="font-sans text-xs sm:text-sm text-brand-light-gray/60">
+            © 2026 TSHEETSANO Community Based Organization & Enterprise. All Rights Reserved.
+          </p>
+          <div class="flex items-center space-x-6 text-xs text-brand-light-gray/60 font-medium font-sans">
+            <span class="select-none">Botshabelo, South Africa</span>
+            <span class="select-none">|</span>
+            <span class="select-none font-medium">Direct Traditional Medicine Hub</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating action items (Controlled by script.js) -->
+    <div id="floating-actions-container" class="hidden fixed bottom-6 right-6 z-40 flex flex-col items-center gap-3">
+      <!-- Back to Top Button link -->
+      <button
+        id="to-top-floating-btn"
+        class="bg-brand-dark-green hover:bg-brand-green text-brand-gold hover:text-white p-4.5 rounded-full shadow-2xl flex items-center justify-center border border-white/10 transition-colors cursor-pointer hover:scale-[1.05]"
+        aria-label="Back to top"
+      >
+        <i class="fa-solid fa-arrow-up text-lg"></i>
+      </button>
+    </div>
+
+    <!-- Active dynamic script -->
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
